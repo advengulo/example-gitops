@@ -74,7 +74,7 @@ func handleRoot(w http.ResponseWriter, r *http.Request) {
 
 	w.Header().Set("Content-Type", "text/plain")
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("Your IP Address : " + clientIP))
+	w.Write([]byte("Your IP Address : " + clientIP + "Testing" ))
 }
 
 func getPublicIP() (string, error) {
